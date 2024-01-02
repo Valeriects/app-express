@@ -1,0 +1,37 @@
+ <main>
+        <form action="/authentification/creation-de-compte" method="post" > 
+            <!-- par défaut, les données du formulaire sont envoyées sous string vers le serveur avec un type mime application/x-www-form-urlencoded -->
+
+
+        <!-- <form action="/authentification/creation-de-compte" method="post" enctype="multipart/form-data"> -->
+            <!-- enctype="multipart/form-data" sert à envoyer des fihcier donc avec dans le formulaire un input type = file les images ou fichier pdf etc -->
+        
+            <fieldset>
+        
+                <legend>Formulaire d&apos;inscription</legend>
+        
+                <label for="nom">Votre nom : </label>
+        
+        
+                <input id="nom" name="nom" type="text" placeholder="Votre nom" />
+        
+                <!-- <label for="firstname">Votre prénom : </label>
+                <input id="firstname" name="firstname" type="text" placeholder="Votre prénom" /> -->
+        
+        
+        
+                <label for="password">Votre mot de passe : </label>
+        
+                <input id="password" name="password" type="password" placeholder="Votre mot de passe" />
+        
+                <input class="submitInput" type="submit" value="Création du compte" />
+        
+                <!-- <button type="submit">Créer le compte</button>  -->
+        
+                <!-- <p className="valideInscription">Votre compte a bien été créé, veuillez vous connecter.</p> -->
+        
+            </fieldset>
+        
+        </form>
+        
+    </main>

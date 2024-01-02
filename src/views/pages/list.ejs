@@ -1,0 +1,27 @@
+<main id="listePerso">
+    <section>
+        <h2>Liste des personnages</h2>
+
+        <label for="perso"></label>
+        <input id="perso" type="search" placeholder="Votre recherche">
+
+        <% for (const item of datas) { %>
+
+            <article>
+                <h3><%= item.title %></h3>
+
+                <figure>
+
+                    <img src="/img/<%= item.src %>" alt="<%= item.alt%>">
+
+                    <button class="btnLien">
+                        <i class="fa-solid fa-square-plus icone"></i>
+                    </button>
+                </figure>
+
+            </article>
+
+
+        <% } %>
+    </section>
+</main>

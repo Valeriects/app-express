@@ -1,0 +1,17 @@
+<main class='mainFiche'>
+
+    <% for (const item of datas) { %>
+    <article class="fichePerso">
+
+
+        <h2><%= item.title %></h2>
+        <h3><%= item.title2 %></h3>
+
+        <img src="/img/<%= item.src %> alt="<%=item.alt%>" />
+
+        <p><%=item.content%></p>
+
+    </article>
+
+    <% } %>
+</main>

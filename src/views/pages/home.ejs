@@ -1,0 +1,20 @@
+<main id="home">
+    <h2>Accueil</h2>
+
+    <section>
+        <% for(const item of datas) { %> 
+            <% for(const key of arrayRandom) { %>
+
+                <% if (item.id === key) { %>
+
+                <img src="/img/<%= item.src %>" alt="<%= item.alt %>" />
+            
+        
+
+                <% } %>
+            <% } %>
+        <% } %>
+    
+    </section>
+</main>
+ 
