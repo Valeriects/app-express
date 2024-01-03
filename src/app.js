@@ -218,9 +218,9 @@ app.post("/authentification/creation-de-compte", (req, res) => {
     bcrypt.hash(req.body.password, 10, function (err, hash) {
     
         //lire le json pou récupérer les donées dedans afin de pouvoir ajouter d'autres données par la suite:
-        jsonfile.readFile(fileUsersJson, (err, datasUsers) => {
-        if (err) console.log.error(err);
-        console.log('read ' + datasUsers);
+        // jsonfile.readFile(fileUsersJson, (err, datasUsers) => {
+        // if (err) console.log.error(err);
+        // console.log('read ' + datasUsers);
 
     
             const datas = [];
@@ -244,7 +244,7 @@ app.post("/authentification/creation-de-compte", (req, res) => {
             
                 console.log("insertion de " + datas);
             });
-        });
+        // });
     });
 
     //ou une redirection:
