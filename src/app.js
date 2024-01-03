@@ -215,17 +215,17 @@ app.get("/authentification/creation-de-compte", (req, res) => {
 //pour réceptionner les données envoyé par le formulaire d'inscription on fait :
 app.post("/authentification/creation-de-compte", (req, res) => {
     //il nous faut un middleware fournit par "express", afin de récupérer et convertir les données en un format manipulable en js donc en un objet
+    bcrypt.hash(req.body.password, 10, function (err, hash) {
     
-    //lire le json pou récupérer les donées dedans afin de pouvoir ajouter d'autres données par la suite:
-    jsonfile.readFile(fileUsersJson, (err, datasUsers) => {
+        //lire le json pou récupérer les donées dedans afin de pouvoir ajouter d'autres données par la suite:
+        jsonfile.readFile(fileUsersJson, (err, datasUsers) => {
         if (err) console.log.error(err);
         console.log('read ' + datasUsers);
 
     
-        const datas = [];
+            const datas = [];
     
 
-        bcrypt.hash(req.body.password, 10, function (err, hash) {
         
             datas.push({ nom: req.body.nom, password: hash });
             // datas.push({ nom: req.body.nom, password: req.body.password });

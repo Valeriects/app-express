@@ -1,3 +1,6 @@
 # on dit qu'on ne veut pas push le node_modules
 node_modules
+# on n'envoit pas les données des users
+public/assets/datasUsers.json
+
 
