@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
 }
@@ -22,6 +23,10 @@ body {
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
+}
+
+.hidden {
+  display: none;
 }
 
 header, footer {
@@ -76,13 +81,11 @@ header .btnBurger {
   font-family: "Caveat", cursive;
   font-size: 2.5rem;
   font-weight: bold;
+  cursor: pointer;
 }
 header .btnBurger .fa-bars {
   font-size: 4rem;
   color: purple;
-}
-header .hidden {
-  display: none;
 }
 
 #home {
@@ -237,6 +240,33 @@ form .lienConnection, form .lienInscription {
 }
 form .lienConnection:hover, form .lienInscription:hover {
   color: purple;
+}
+
+#notFound {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/img/fondlivrpapier72dpi-opacité20-moyen.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+#notFound section {
+  width: 80%;
+  margin: auto;
+  padding: 2.5rem;
+  background-color: white;
+  color: purple;
+  border: 2px solid purple;
+  border-radius: 1rem;
+  text-align: center;
+}
+#notFound section p strong {
+  font-size: 5rem;
+}
+#notFound section a {
+  color: purple;
+  font-size: 2rem;
 }
 
 footer {

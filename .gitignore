@@ -1,6 +1,7 @@
 # on dit qu'on ne veut pas push le node_modules
 node_modules
 # on n'envoit pas les données des users
+#  il faut que lors du premier envois, le fichier soit déjà dans le gitignore, sinon, il faut que le fichier ne soit pas présent déjà et qu'on l'ajoute après mais toujours le mettre dans le gitignore avant de le push
 public/assets/datasUsers.json
 
 
